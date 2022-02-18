@@ -1,0 +1,48 @@
+body{
+  margin:0;
+  font-family: georgia;
+}
+a{
+  font-family: georgia;
+  color:black;
+  text-decoration:none;
+}
+h1{
+  font-family:cursive;
+  font-size:55px;
+  text-align:center;
+  border-bottom:4px solid red;
+  margin:0;
+  padding:20px;
+}
+h2{
+  font-family: georgia;
+}
+h3{
+  font-family: georgia;
+}
+ol{
+  border-right:4px solid red;
+  width:130px;
+  margin:0;
+  padding:20px;
+}
+
+#grid{
+  display:grid;
+  grid-template-columns: 150px 1fr;
+}
+#grid ol{
+  padding-left:30px;
+}
+#grid #article{
+  padding-left:50px;
+}
+ @media(max-width:800px){
+  #grid{display: block;}
+  ol{border-right:none;
+  }
+  h1{
+    border-bottom:none;
+  }
+}
